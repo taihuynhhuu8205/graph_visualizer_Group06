@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph Visualizer - Nhóm 06</title>
+</head>
+<body>
+    <h1>Graph Visualizer</h1>
+
+    <div>
+        <h3>Nhập danh sách đỉnh</h3>
+        <input type="text" id="verticesInput" placeholder="Ví dụ: A,B,C,D">
+    </div>
+
+    <div>
+        <h3>Nhập danh sách cạnh</h3>
+        <textarea id="edgesInput" placeholder="Ví dụ: A-B,B-C,C-D"></textarea>
+    </div>
+
+    <button id="drawGraphBtn">Vẽ đồ thị</button>
+    <button id="clearGraphBtn">Xóa đồ thị</button>
+
+    <h3>Khu vực hiển thị đồ thị</h3>
+    <canvas id="graphCanvas" width="800" height="500" style="border: 1px solid black;"></canvas>
+
+    <script src="{{ url_for('static', filename='js/graph.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
